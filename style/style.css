@@ -199,14 +199,14 @@ svg * {
 }
 @font-face {
   font-family: InterTight;
-  src: url('../fonts/InterTight-Medium.woff2') format("woff2");
+  src: url('fonts/InterTight-Medium.woff2') format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: InterTight;
-  src: url('../fonts/InterTight-SemiBold.woff2') format("woff2");
+  src: url('fonts/InterTight-SemiBold.woff2') format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
