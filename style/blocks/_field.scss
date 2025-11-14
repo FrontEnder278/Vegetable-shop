@@ -1,0 +1,43 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    &__input {
+        border-radius: var(--border-radius);
+        border: 1px solid rgba(20, 20, 20, 0.2);
+        padding: 16px 120px 16px 16px;
+        max-width: 430px;
+
+          &--textarea {
+        max-width: 430px;
+        min-height: 95px;
+        padding: 16px 120px 59px 16px;
+        resize: none;
+       }
+
+        &::placeholder {
+        color: var(--color-dark);
+     }
+
+        &:hover,
+        &:focus,
+        &:not(:placeholder-shown) {
+         border-color: #e74a3b;
+         outline: none;
+    }
+    }
+
+     &__button {
+            padding: 16px 120px;
+            background-color: var(--color-green);
+            max-width: 430px;
+            width: 100%;
+
+            &:hover {
+                background-color: var(--color-dark);
+                color: var(--color-wgight);
+            }
+        }
+
+}
