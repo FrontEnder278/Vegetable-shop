@@ -1,0 +1,47 @@
+// Плавное изменение шрифта
+@mixin fluid-text($min: 16, $max: 76) {
+    font-size: clamp(#{$min}px, #{$max / 1180 * 100}vw, #{$max}px);
+}
+
+// Сброс стилей ссылок и наследование цвета родителя
+@mixin reset-link {
+    color: inherit;
+
+    &,
+    &:hover {
+    text-decoration: none;
+}
+}
+
+
+// Для абсолютного позиционирвания 
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+// выбор типа отображения элемента
+@mixin flex-center($isInline: false) {
+    @if $isInline {
+        display: inline-flex;
+    } @else {
+        display: flex;
+    }
+    justify-content: center;
+    align-items: center;
+}
+
+// Сброс стилей кннопок
+@mixin reset-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+// Квадрат
+@mixin square($size) {
+    width: $size;
+    aspect-ratio: 1;
+}
