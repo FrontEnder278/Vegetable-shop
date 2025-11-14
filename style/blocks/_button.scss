@@ -1,0 +1,29 @@
+.button {
+    @include flex-center(true);
+
+    width: 157px;
+    height: var(--button-height);
+    padding: 16px 32px;
+    background-color: var(--color-red);
+    color: var(--color-whight);
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    border: none;
+
+    &:hover {
+        color: var(--color-dark);
+        background-color: var(--color-whight);
+    }
+
+    &-alt {
+        background-color: var(--color-whight);
+        color: var(--color-red);
+
+        &:hover {
+            background-color: var(--color-dark);
+            color: var(--color-whight);
+        }
+    }
+}
