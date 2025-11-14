@@ -1,0 +1,31 @@
+:root {
+
+// Цвета:
+
+    --color-dark: #141414;
+    --color-green: #576F35;
+    --color-red: #7A3145;
+    --color-whight: #FBFBFB;
+
+// Контейнер
+
+    --container-width: 1240px;
+    --container-padding-x: 20px;
+// Кнопки
+
+    --button-height: 52px;
+    --button-height-small: 44px;
+    --input-height: 52px;
+
+// Рамки
+
+    --border: 1px solid var(--color-whight);
+    --border-radius: 30px;
+    --border-radius-average: 15px;
+    --border-radius-small: 12px;
+
+// Время перехода
+
+    --transition-duration: 0.6s;
+}
+
