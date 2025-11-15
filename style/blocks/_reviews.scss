@@ -1,0 +1,114 @@
+.reviews {
+    
+    &__inner {
+     display: flex;
+     flex-direction: column;
+     row-gap: 50px;
+     padding: 100px;
+     background-color: var(--color-whight);
+
+     @include desktop-s {
+      padding: 100px 40px;
+     }
+
+     @include tablet {
+      padding: 100px 32px;
+     }
+
+     @include mobile {
+      padding: 80px 20px;
+     }
+     }
+
+    &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    max-width: 553px;
+    color: var(--color-dark);
+
+    &-title {
+      line-height: 1;
+    }
+  
+    &-title span {
+      color: var(--color-green);
+     }  
+    }
+
+     &__text-description {
+
+      @include mobile {
+        font-size: 14px;
+      }
+     }
+
+    &__list {
+      display: flex;
+      column-gap: 25px;
+      
+      @include desktop-s {
+        column-gap: 20px;
+      }
+
+      @include tablet {
+        column-gap: 18px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
+    }
+
+    &__item {
+      max-width: 343px;
+      border: 1px solid rgba(122, 49, 69, 0.3);
+      border-radius: 24px;
+
+      @include tablet {
+        min-width: 340px;
+        scroll-snap-align: start;
+      }
+
+      @include mobile {
+        min-width: 296px;
+        width: 100vw;
+      }
+    }
+
+    &__wrapper {
+      padding: 20px;
+      @include flex-center;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+
+    &__icon {
+      display: flex;
+      justify-self: center;
+    }
+
+    &__body {
+      @include flex-center;
+      flex-direction: column;
+      row-gap: 8px;
+      color: var(--color-dark);
+
+      &-name {
+        font-size: 18px;
+        font-weight: 600;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+      &-quote {
+        opacity: 0.4;
+        text-align: center;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+}
+
