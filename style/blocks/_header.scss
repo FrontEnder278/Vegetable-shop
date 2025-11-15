@@ -2,12 +2,6 @@
     padding-top: 32px;
     position: relative;
     z-index: 10;
-   
-    @include tablet-above {
-        &__logo {
-        padding-left: 100px;
-    }
-    }
 
     @include desktop-s {
         &__logo {
@@ -57,4 +51,5 @@
     margin-right: 40px;
    }
   
+
 }
